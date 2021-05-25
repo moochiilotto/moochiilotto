@@ -778,7 +778,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
     ) external;
 }
 
-contract Lotto is Context, IERC20, Ownable {
+contract MoochiiLotto is Context, IERC20, Ownable {
     using SafeMath for uint256;
     using Address for address;
 
@@ -803,8 +803,8 @@ contract Lotto is Context, IERC20, Ownable {
 	
 	uint256 private _minLottoBalance = 100000000;
 
-    string private _name = "LottoToken";
-    string private _symbol = "LOTTO";
+    string private _name = "MoochiiLotto";
+    string private _symbol = "MoochiiLotto";
     uint8 private _decimals = 9;
     
     uint256 public _taxFee = 4;
